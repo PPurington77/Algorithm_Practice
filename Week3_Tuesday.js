@@ -90,19 +90,19 @@ console.log(binarySearch(nums3, searchNum3)); // true (1 for bonus)
 
 //////////////////////////////////////////////////////an answer below
 
-* pseudocode:
-* - sort input array
-    * - initialize two variables, start and end
-        * - start would be the first index
-            * - end would be last index in array
-                * - put everything in a while loop with condition start <= end
-                    * - initialize mid value to be math.floor(avg of start and end)
-                        * - check if mid is expected value( return true if true)
-* - if not check if value at mid is less or greater than expected value
-    * - if greater start = mid + 1
-        * - if less end = mid - 1
-            * - return false at end of method
-                * /
+// * pseudocode:
+// * - sort input array
+//     * - initialize two variables, start and end
+//         * - start would be the first index
+//             * - end would be last index in array
+//                 * - put everything in a while loop with condition start <= end
+//                     * - initialize mid value to be math.floor(avg of start and end)
+//                         * - check if mid is expected value( return true if true)
+// * - if not check if value at mid is less or greater than expected value
+//     * - if greater start = mid + 1
+//         * - if less end = mid - 1
+//             * - return false at end of method
+//                 * /
 function binarySearch(sortedNums, searchNum) {
     sortedNums = sortedNums.sort();
     let start = 0;
